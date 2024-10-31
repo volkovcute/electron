@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Пользователи</h1>
+<button id="addUserBtn">Добавить пользователя</button>
+
+<table id="usersTable">
+    <thead>
+    <tr>
+        <th>Имя</th>
+        <th>Возраст</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Пользователи будут добавлены сюда -->
+    </tbody>
+</table>
+
+<div id="userForm" class="hidden">
+    <h2>Добавить пользователя</h2>
+    <input type="text" id="name" placeholder="Имя" required>
+    <input type="number" id="age" placeholder="Возраст" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button id="saveUserBtn">Сохранить</button>
+    <button id="cancelBtn">Отмена</button>
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
